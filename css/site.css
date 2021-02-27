@@ -1,0 +1,104 @@
+body {
+    font-family: 'Krona One', sans-serif;
+    background-color: #010101;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+/* --- BOX COLLUMNS --- */
+
+.column {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    height: 100vh;
+}
+
+.title-box {
+    line-height: 100vh;
+    text-align: center;
+}
+
+.column-title {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.section-number {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+.section-line {
+    position: absolute;
+    background: #fff;
+    height: calc(100vh - 50px);
+    width: 0.5px;
+    right: 0;
+    top: 25px;
+}
+
+
+
+/* --- MAIN BOX --- */
+
+.main {
+    position: relative;
+    z-index: -10;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+}
+
+.headline-box {
+    height: fit-content;width: fit-content;
+    position: absolute;
+    margin: auto;
+    top: 22%;
+
+    right: -28px;
+}
+
+.introduction-text {
+    font-size: 24px;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    height: fit-content;
+    position: absolute;
+    margin: auto;
+    bottom: 22%;
+    left: 10%;
+    right: 30%;
+}
+
+.introduction-text > span {
+    display: block;
+    margin-top: 20px;
+}
+
+.headline {
+    color: #FF4B00;
+    text-align: right;
+    font-size: 64px;
+    margin: 0;
+    line-height: 64px;
+}
+
+.marker-overlay {
+    display: block;
+    background: rgba(255, 75, 0, 0.5);
+    width: 260px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: calc(22% + 60px);
+}
