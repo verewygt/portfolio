@@ -80,7 +80,7 @@ body {
 }
 
 .column.link:hover > div > .column-title {
-    width: calc(fit-content + 55px);
+    padding-right: 55px;
 }
 
 .column.link:hover > div > .column-title::after {
@@ -102,7 +102,7 @@ body {
     margin: auto;
     padding: 0;
     animation: reveal-slide-up 0.5s cubic-bezier(0.8, 0, 0.2, 1) 1.5s both;
-    transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+    transition: padding 0.5s cubic-bezier(0.8, 0, 0.2, 1);
 }
 
 .column-title::after {
