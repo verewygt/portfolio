@@ -16,6 +16,33 @@ body {
     flex-direction: row;
 }
 
+.content::after {
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 200vw;
+    height: 200vh;
+    background-size: 150px;
+    background-image: url(/css/img/noise.png);
+    animation: noise 5s steps(10) infinite;
+    opacity: 0.2;
+}
+
+/* --- NOISE EFFECT --- */
+
+@keyframes noise {
+  0%, 100% {transform: translate(0,0);}
+  10% {transform: translate(-5%,-10%);}
+  20% {transform: translate(-15%,-5%);}
+  30% {transform: translate(7%,-25%);}
+  40% {transform: translate(-5%,25%);}
+  50% {transform: translate(-15%,10%);}
+  60% {transform: translate(15%,0%);}
+  70% {transform: translate(0%,15%);}
+  80% {transform: translate(3%,5%);}
+  90% {transform: translate(-10%,10%);}
+}
 
 /* --- HEADER SECTION --- */
 
@@ -136,7 +163,7 @@ body {
     width: 0.5px;
     right: 0;
     top: 25px;
-    animation: curtain 1s cubic-bezier(0.8, 0, 0.2, 1) 1.75s both;
+    animation: curtain 1s cubic-bezier(0.8, 0, 0.2, 1) 1.75s backwards;
 }
 
 @keyframes curtain {
@@ -166,7 +193,7 @@ section > a {
     position: relative;
     z-index: -10;
     overflow: hidden;
-    background: #fff;
+    background-color: #fff;
     color: #000;
     animation: main 1s cubic-bezier(0.8, 0, 0.2, 1) 0.1s both;
 }
