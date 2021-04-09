@@ -12,8 +12,8 @@ function display() {
     var list = document.querySelector('.content');
     list.innerHTML = "";
 
-    for (var i = 0; i < projects_json.projects[].length; i++) {
-        var link = projects_json.projects[i].name.toLowercase.replace(" ", "-");
+    for (var i = 0; i < projects_json.projects.length; i++) {
+        var link = projects_json.projects[i].name.toLowerCase().replace(/ /gi,'-');
         var name = projects_json.projects[i].name;
         var date = projects_json.projects[i].date;
         var text = projects_json.projects[i].text;
