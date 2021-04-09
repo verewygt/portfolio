@@ -26,7 +26,7 @@ body {
     background-size: 150px;
     background-image: url(/css/img/noise.png);
     animation: noise 5s steps(10) infinite;
-    opacity: 0.25;
+    opacity: 0.15;
 }
 
 /* --- NOISE EFFECT --- */
